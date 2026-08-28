@@ -3,8 +3,7 @@ name: XAU_USD Signal Bot Runner
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: '0 */6 * * *' # Auto-restarts every 6 hours to ensure 100% uptime
+  workflow_dispatch: 
 
 jobs:
   run-bot:
